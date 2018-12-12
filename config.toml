@@ -1,0 +1,30 @@
+[config]
+# the time interval to check targets.
+# default: 5[sec]
+interval = 5
+
+# time[sec] to wait for finishing jobs.
+# default: 0, which means it wont kill process.
+timeout = 0
+
+mail_from = 'root@localhost'
+
+# path to id_rsa for git ssh.
+# default: $HOME/.ssh/id_rsa
+# id_rsa = '~/.ssh/id_rsa'
+
+# number of processes to run minions in parallel.
+# default: the number of processors on the environment.
+# n_proc = 4
+
+# directory to clone targets.
+# default: __path__ + '/repositories'.
+# dest = 'repositories'
+
+[[repository]]
+url = 'git@github.com:koka831/competitive'
+mail_to = 'koka.code@gmail.com'
+
+[[repository]]
+url = 'git@github.com:koka831/runner'
+mail_to = 'koka.code@gmail.com'
